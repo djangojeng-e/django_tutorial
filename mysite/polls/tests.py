@@ -17,3 +17,23 @@ class QuestionModelTests(TestCase):
         time = timezone.now() + datetime.timedelta(days=30)
         future_question = Question(pub_date=time)
         self.assertIs(future_question.was_published_recently(), False)
+
+    def test_was_published_recently_with_old_question(self):
+        """
+        was_published_recently() 가 pub_date 가 1일이상 되었을때
+        False 를 반환합니다
+        :return:
+        """
+        time = timezone.now() - datetime.timedelta(days=1, seconds=1)
+        old_question = Question(pub_date=time)
+        self.assertIs(old_question.was_published_recently(), False)
+
+    def test_was_published_recenlty_with_recent_question(self):
+        """
+        was_published_recently() 가 pub_date 가 어제 이전이면,
+        True 를 반환합니
+        :return:
+        """
+        time = timezone.now() - datetime.timedelta(hours=23, minutes=59, seconds=59)
+        recent_question = Question(pub_date=time)
+        self.assertIs(recent_question.was_published_recently(), True)
