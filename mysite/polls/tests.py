@@ -108,7 +108,29 @@ class QuestionIndexViewTests(TestCase):
             ['<Question: Past question 2.>', '<Question: Past question 1.>']
         )
 
-#
+
+class QuestionDetailViewTests(TestCase):
+    def test_future_question(self):
+        """
+        pub_date 가 미래일짜인 question 은
+        404 not found 를 반환합니다
+        """
+        future_question = create_question(question_text='Future question.', days=5)
+        url = reverse('polls:detail', args=(future_question.id,))
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, 404)
+
+    def test_past_question(self):
+        """
+        pub_date 가 과거에 발행된 question 은
+        question의 text 를 표시합니다
+        """
+        past_question = create_question(question_text='Past Question.', days=-5)
+        url = reverse('polls:detail', args=(past_question.id,))
+        response = self.client.get(url)
+        self.assertContains(response, past_question.question_text)
+
+
 # def create_question(question_text, days):
 #     """
 #     question_text 와 pub_date 를 가진 question 을 생성.
