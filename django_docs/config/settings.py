@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'usingmodel',
+    # 'usingmodel',
     'onetomany',
+    'manytomany',
     'django_extensions',
 ]
 
