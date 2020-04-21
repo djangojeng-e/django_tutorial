@@ -29,11 +29,7 @@ class Enrolment(models.Model):
     academic_record = models.CharField(null=True, choices=AcademicType.choices, max_length=10)
 
     def __str__(self):
-        return (self.student + " "
-                + self.course + " "
-                + self.enrolled_date + " "
-                + self.finished_date + " "
-                + self.academic_record)
+        return self.student, self.course, self.enrolled_date, self.finished_date, self.academic_record
 
 
 
