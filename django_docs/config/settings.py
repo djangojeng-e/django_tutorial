@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # 'usingmodel',
     'onetomany',
     'manytomany',
+    'manytomanyexample',
     'django_extensions',
 ]
 
