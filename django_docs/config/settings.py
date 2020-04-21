@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'onetomany',
     'manytomany',
     'manytomanyexample',
+    'onetoone',
     'django_extensions',
 ]
 
