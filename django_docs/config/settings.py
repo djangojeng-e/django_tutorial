@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     # 'manytomany',
     # 'manytomanyexample',
     # 'onetoone',
-    'modelmethods',
+    # 'modelmethods',
+    'abstractbaseclasses',
     'django_extensions',
 ]
 
