@@ -39,10 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # 'usingmodel',
-    'onetomany',
-    'manytomany',
-    'manytomanyexample',
-    'onetoone',
+    # 'onetomany',
+    # 'manytomany',
+    # 'manytomanyexample',
+    # 'onetoone',
+    'modelmethods',
     'django_extensions',
 ]
 
