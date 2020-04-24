@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     # 'modelmethods',
     # 'abstractbaseclasses',
     # 'multitableinheritance',
-    'proxymodel',
+    # 'proxymodel',
+    'makingqueries',
     'django_extensions',
 ]
 
