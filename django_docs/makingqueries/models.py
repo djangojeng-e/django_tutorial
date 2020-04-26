@@ -34,4 +34,6 @@ class Entry(models.Model):
         return self.headline
 
 
+class Themeblog(Blog):
+    theme = models.CharField(max_length=200)
 
