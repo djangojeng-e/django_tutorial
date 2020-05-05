@@ -49,8 +49,8 @@ INSTALLED_APPS = [
     # 'proxymodel',
     # 'makingqueries',
 
-    'buildingaform',
-
+    # 'buildingaform',
+    'forms_more_on_fields',
     'django_extensions',
 ]
 
