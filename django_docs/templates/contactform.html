@@ -1,23 +1,41 @@
-<div class="fieldWrapper">
-    {{ form.subject.errors }}
-    {{ form.subject.label_tag }}
-    {{ form.subject }}
-</div>
 
-<div class="fieldWrapper">
-    {{ form.message.errors }}
-    {{ form.message.label_tag }}
-    {{ form.message }}
-</div>
+{% for field in form %}
+  <div class="fieldwrapper">
+      {{ field.errors }}
+      {{ field.label_tag }} {{ field }}
+      {% if field.help_text %}
+      <p class="help">{{ field.help_text|safe }}</p>
+      {% endif %}
+  </div>
+{% endfor %}
 
-<div class="fieldWrapper">
-    {{ form.sender.errors }}
-    {{ form.sender.label_tag }}
-    {{ form.sender }}
-</div>
 
-<div class="fieldWrapper">
-    {{ form.cc_myself.errors }}
-    {{ form.cc_myself.label_tag }}
-    {{ form.cc_myself }}
-</div>
+
+
+
+
+
+
+<!--<div class="fieldWrapper">-->
+<!--    {{ form.subject.errors }}-->
+<!--    {{ form.subject.label_tag }}-->
+<!--    {{ form.subject }}-->
+<!--</div>-->
+
+<!--<div class="fieldWrapper">-->
+<!--    {{ form.message.errors }}-->
+<!--    {{ form.message.label_tag }}-->
+<!--    {{ form.message }}-->
+<!--</div>-->
+
+<!--<div class="fieldWrapper">-->
+<!--    {{ form.sender.errors }}-->
+<!--    {{ form.sender.label_tag }}-->
+<!--    {{ form.sender }}-->
+<!--</div>-->
+
+<!--<div class="fieldWrapper">-->
+<!--    {{ form.cc_myself.errors }}-->
+<!--    {{ form.cc_myself.label_tag }}-->
+<!--    {{ form.cc_myself }}-->
+<!--</div>-->
