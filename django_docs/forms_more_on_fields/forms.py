@@ -7,3 +7,8 @@ class ContactForm(forms.Form):
     sender = forms.EmailField()
     cc_myself = forms.BooleanField(required=False)
 
+
+class CommentForm(forms.Form):
+    name = forms.CharField(initial='class')
+    url = forms.URLField()
+    comment = forms.CharField()
