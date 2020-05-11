@@ -49,7 +49,7 @@ class MyUser(AbstractBaseUser):
 
     objects = MyUserManager()
 
-    USERNAME_FiELD = 'email'
+    USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['date_of_birth']
 
     def __str__(self):
