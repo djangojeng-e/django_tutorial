@@ -12,3 +12,9 @@ class CommentForm(forms.Form):
     name = forms.CharField(initial='class')
     url = forms.URLField()
     comment = forms.CharField()
+
+
+class OptionalPersonForm(forms.Form):
+    first_name = forms.CharField()
+    last_name = forms.CharField()
+    nick_name = forms.CharField(required=False)

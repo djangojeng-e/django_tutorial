@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     # 'makingqueries',
 
     # 'buildingaform',
-    # 'forms_more_on_fields',
+    'forms_more_on_fields',
     # 'User_model_extension',
     'fullexample',
     'django_extensions',
