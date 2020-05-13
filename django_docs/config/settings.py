@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'forms_more_on_fields',
     # 'User_model_extension',
     'fullexample',
+    'generic_views',
     'django_extensions',
 ]
 
