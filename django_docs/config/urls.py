@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('buildingaform.urls')),
     path('contactform/', include('forms_more_on_fields.urls')),
+    path('publishers/', include('generic_views.urls')),
 ]
