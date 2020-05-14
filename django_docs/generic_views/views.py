@@ -19,6 +19,16 @@ class PublisherDetail(DetailView):
         return context
 
 
+class BookList(ListView):
+    queryset = Book.objects.order_by('-publication_date')
+    context_object_name = 'book_list'
+
+
+class AcmeBookList(ListView):
+    context_object_name = 'book_list'
+    queryset = Book.objects.filter(publisher__name='ACME publising')
+    template_name = 'books/acme_list.html'
+
 
 
 
