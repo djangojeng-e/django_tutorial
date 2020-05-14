@@ -5,6 +5,8 @@ from .models import Publisher
 
 class PublisherList(ListView):
     model = Publisher
+    context_object_name = 'my_favourite_publishers'
+
 
 
 
