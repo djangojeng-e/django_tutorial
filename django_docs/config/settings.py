@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-AUTH_USER_MODEL = 'fullexample.MyUser'
+# AUTH_USER_MODEL = 'fullexample.MyUser'
 
 # Application definition
 
@@ -51,10 +51,11 @@ INSTALLED_APPS = [
     # 'makingqueries',
 
     # 'buildingaform',
-    'forms_more_on_fields',
+    # 'forms_more_on_fields',
     # 'User_model_extension',
-    'fullexample',
+    # 'fullexample',
     'generic_views',
+    'classviewsforms',
     'django_extensions',
 ]
 
