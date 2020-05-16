@@ -14,18 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
-
-# from django_tutorial.django_docs.classviewsforms.views import AuthorCreate, AuthorUpdate, AuthorDelete
+from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('buildingaform.urls')),
-    path('contactform/', include('forms_more_on_fields.urls')),
-    path('publishers/', include('generic_views.urls')),
-
-    #
-    # path('author/add/', AuthorCreate.as_view(), name='author-add'),
-    # path('author/<int:pk>/', AuthorUpdate.as_view(), name='author-update'),
-    # path('author/<int:pk>/delete/', AuthorDelete.as_view(), name='author-delete'),
 ]

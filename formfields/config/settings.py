@@ -20,14 +20,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '+0dwx1t5tc@8o#!#1_4diaa)+)(b@xfskk4zerluy9q7t$3hr='
+SECRET_KEY = '@6ph$@@bjvrvg1rzzan&e_42d26ra6t$g_njs(g*b*)x9u+ggp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
 
-# AUTH_USER_MODEL = 'fullexample.MyUser'
 
 # Application definition
 
@@ -39,23 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # 'usingmodel',
-    # 'onetomany',
-    # 'manytomany',
-    # 'manytomanyexample',
-    # 'onetoone',
-    # 'modelmethods',
-    # 'abstractbaseclasses',
-    # 'multitableinheritance',
-    # 'proxymodel',
-    # 'makingqueries',
-
-    # 'buildingaform',
-    # 'forms_more_on_fields',
-    # 'User_model_extension',
-    # 'fullexample',
-    # 'generic_views',
-    # 'classviewsforms',
     'formfields',
     'django_extensions',
 ]
@@ -75,7 +57,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
