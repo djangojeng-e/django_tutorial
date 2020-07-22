@@ -3,7 +3,7 @@
     <h2>Publishers</h2>
     <ul>
         {% for publisher in publisher_list %}
-            <li>{{ publisher.name }}</li>
+         <a href="detail/{{publisher.id}}">   <li>{{ publisher.name }}</li></a>
         {% endfor %}
     </ul>
 {% endblock %}
