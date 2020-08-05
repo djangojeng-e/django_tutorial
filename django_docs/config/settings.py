@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-# AUTH_USER_MODEL = 'fullexample.MyUser'
+AUTH_USER_MODEL = 'fullexample.MyUser'
 
 # Application definition
 
@@ -41,8 +41,8 @@ INSTALLED_APPS = [
 
     # 'usingmodel',
     # 'onetomany',
-    # 'manytomany',
-    # 'manytomanyexample',
+    'manytomany',
+    'manytomanyexample',
     # 'onetoone',
     # 'modelmethods',
     # 'abstractbaseclasses',
@@ -53,8 +53,8 @@ INSTALLED_APPS = [
     # 'buildingaform',
     # 'forms_more_on_fields',
     # 'User_model_extension',
-    # 'fullexample',
-    # 'generic_views',
+    'fullexample',
+    'generic_views',
     # 'classviewsforms',
     'formfields',
     'django_extensions',
