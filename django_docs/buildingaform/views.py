@@ -1,9 +1,26 @@
 from django.shortcuts import render
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 
 from .forms import NameForm
 
 # Create your views here.
+
+
+def index(request):
+    print(request.session)
+    print(dir(request.session))
+    # request.session['fav_color'] = 'red'
+    # print(request.session.keys())
+    # print(request.session.__getitem__('fav_color'))
+    # print(request.session.__contains__('fav_color'))
+    print(request.session.keys())
+    print(request.session.values())
+    # print(request.session.set_test_cookie())
+    # print(request.session.test_cookie_worked())
+    # print(request.session.delete_test_cookie())
+    print(request.session.get_session_cookie_age())
+    print(request.session.flush())
+    return HttpResponse('This is a index page')
 
 
 def get_name(request):
